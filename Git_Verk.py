@@ -13,3 +13,12 @@ margfoldun = tala * tala2 # margfaldar tölu1 og tölu2 saman
 print(tala,"+",tala2,"=",samanlagt) # byrtir reikning fyrir samanlagningu
 print(tala,"*",tala2,"=",margfoldun)# byrtir margföldunar reikningiginn
 print("") # noitað fyrir bil
+
+# Dæmi 2
+# Hér fyrir neðan er forrit sem byður notanda um fornanf og eftirnafn
+
+nafn = input("Hvað er fornafn þitt? ") # Byður notanda um fornafn
+eftirNafn = input("Hvað er eftirnafn þitt? ") # Byður notanda um eftirnafn
+
+print("Halló",nafn,eftirNafn) # Byrtir "Halló Nafn notadna"
+print("") # gert fyrir bil

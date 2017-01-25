@@ -22,3 +22,24 @@ eftirNafn = input("Hvað er eftirnafn þitt? ") # Byður notanda um eftirnafn
 
 print("Halló",nafn,eftirNafn) # Byrtir "Halló Nafn notadna"
 print("") # gert fyrir bil
+
+#Dæmi 3
+# Hér fyrir neðan er forrit sem byður notanda um texta og segir svo hvað eru margir hástafir/lástfir í honum
+
+texti = input("Sláðu inn texta: ") # byður notanda um texta
+teljariLaEftirHa = 0 # Breyta fyrir Teljara lástafi eftie hástafi
+teljariHa = 0 # Breyta fyrir teljara hástafa
+teljariLa = 0 # Breyta fyrir teljara lástafa
+
+for x in range(len(texti)):
+    if(texti[x].isalpha()) and (texti[x].isupper()):
+        teljariHa += 1
+        if(texti[x+1].islower()):
+            teljariLaEftirHa += 1
+    if(texti[x].isalpha()) and (texti[x].islower()):
+        teljariLa += 1
+
+
+print("Textin er: ",texti) # Byrtir textan fyrir notanda
+print("Í þessum texta eru ",teljariHa," hástafir, ",teljariLa," lágstafir og ",teljariLaEftirHa, "lágstafir koma strax á eftir hástaf.")
+# Hér fyrir ofan sýnir textin hvað voru margir hástafir/lástafir og hvað komu margir lástafir eftir hástaf
